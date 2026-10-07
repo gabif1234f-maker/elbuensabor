@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menú de navegación -->
+    <header class="navbar">
+        <div class="logo">Pizzería El Buen Sabor</div>
+        <nav>
+<ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="#especialidades">Servicios</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+</ul>
+
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Las mejores pizzas artesanales a la piedra</h1>
+            <p>Aprende a construir sitios web rápidos, limpios y completamente adaptables a cualquier pantalla.</p>
+            <a href="#" class="btn">Comenzar Ahora</a>
+        </div>
+    </section>
+    <!-- Sección de Menú / Productos -->
+       <!-- Sección de Menú / Productos Actualizada -->
+    <section class="menu-section">
+        <h2>Nuestras Especialidades</h2>
+        <div class="cards-container">
+            
+            <!-- Tarjeta 1 -->
+            <div class="card">
+                <img src="pizza1.jpg" alt="Muzzarella" class="card-img">
+                <h3>Muzzarella Clásica</h3>
+                <p>Salsa de tomate casera, doble muzzarella premium, aceitunas verdes y un toque de orégano fresco.</p>
+                <div class="card-footer-item">
+                    <span class="price">$10.50</span>
+                    <a href="#" class="btn-card">Pedir</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="card">
+                <img src="pizza2.jpg" alt="Pepperoni" class="card-img">
+                <h3>Pepperoni Especial</h3>
+                <p>Abundante pepperoni americano crujiente sobre una base de queso muzzarella derretido.</p>
+                <div class="card-footer-item">
+                    <span class="price">$12.50</span>
+                    <a href="#" class="btn-card">Pedir</a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="card">
+                <img src="pizza3.jpg" alt="Fugazzeta" class="card-img">
+                <h3>Fugazzeta Rellena</h3>
+                <p>Capa extra de queso cubierta con cebolla finamente cortada, sazonada con aceite de oliva.</p>
+                <div class="card-footer-item">
+                    <span class="price">$13.00</span>
+                    <a href="#" class="btn-card">Pedir</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+        <!-- Sección del Formulario de Pedido -->
+    <section class="order-section">
+        <h2>Hacé tu Pedido</h2>
+        <p class="order-subtitle">Completá tus datos y te preparamos la pizza al instante.</p>
+        
+        <form class="order-form">
+            <div class="form-group">
+                <label for="name">Nombre Completo:</label>
+                <input type="text" id="name" placeholder="Ej: Juan Pérez" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Dirección de Entrega:</label>
+                <input type="text" id="address" placeholder="Ej: Av. Principal 123" required>
+            </div>
+
+            <div class="form-group">
+                <label for="pizza-select">Elegí tu Especialidad:</label>
+                <select id="pizza-select" required>
+                    <option value="" disabled selected>Seleccioná una opción...</option>
+                    <option value="muzzarella">Muzzarella Clásica</option>
+                    <option value="pepperoni">Pepperoni Especial</option>
+                    <option value="fugazzeta">Fugazzeta Rellena</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar Pedido</button>
+        </form>
+    </section>
+
+
+    <!-- Pie de Página (Footer) -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2026 MiSitio Pizzería. Todos los derechos reservados.</p>
+            <p>Horarios: Mar a Dom de 19:30 a 00:00 hs</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</body>
+</html>
